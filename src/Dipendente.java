@@ -1,4 +1,4 @@
-public abstract class Dipendente {
+public abstract class Dipendente implements Controllo {
     protected String matricola;
     protected double stipendio;
     protected Dipartimento dipartimento;
@@ -33,4 +33,8 @@ public abstract class Dipendente {
     }
 
     public abstract double calculateSalary();
+
+    public void checkIn() {
+        System.out.println("Il dipendente ha iniziato il suo servizio alle 10.30 ");
+    }
 }
